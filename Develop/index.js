@@ -45,7 +45,7 @@ const questions = () => {
             },
             {
                 type: 'input',
-                name: 'Description',
+                name: 'description',
                 message: 'Please add a description of your project.'
             },
             {
@@ -106,8 +106,24 @@ const questions = () => {
 
 
 // TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function(err) {
+        if (err) {
+            throw err
+        } else {
+            console.log('ReadME file Generated!');
+        }
+    }
+)};
 
 // TODO: Create a function to initialize app
+const init = () => {
+    questions()
+    .then(function(data) {
+        writeToFile('README.md', generateMarkdown(data));
+        console.log(data);
+    })
+};
 
 // Function call to initialize app
 init();
