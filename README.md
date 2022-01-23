@@ -1,5 +1,5 @@
 
-  # README Generator
+  # README-Generator
 
   ## Description
     When the app runs, it asks you questions in order to generate a README for your project.
@@ -19,7 +19,7 @@
 
 
   # Usage
-  Instructions for use: 'node index' is the only command needed to run this program
+  Instructions for use: After initializing the program, you will follow the prompt, answering questions that will be used to create the document.
 
 
   # License
@@ -29,7 +29,7 @@
 
 
   # Tests
-  Testing: 'node index' is the only command needed to run this program
+  Testing: 'node index' is the only command needed
 
 
   # Contributors
@@ -37,4 +37,4 @@
 
 
   # Questions
-  If you have any questions, feel free to contact jmproctor via email at: jmproctor@test.com.
+  If you have any questions, feel free to contact Jmproctor via email at: jmproctor@test.com.

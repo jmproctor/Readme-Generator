@@ -88,20 +88,7 @@ const questions = () => {
                 type: 'input',
                 name: 'contributors',
                 message: 'Who are the contributors?'
-            },
-            {
-                type: 'input',
-                name: 'questions',
-                message: 'Contact info for questions. (Required)',
-                validate: inquiriesInput => {
-                    if (inquiriesInput) {
-                        return true;
-                    } else {
-                        console.log('Please enter contact info for inquiries or questions about your project.');
-                        return false;
-                    }
-                }
-            },
+            }
         ])}
 
 

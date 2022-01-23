@@ -1,5 +1,1 @@
 node_modules
-
-When the app runs, it asks you questions in order to generate a README for your project.
-To run this project, you need to install the required dependencies, then you are able to run the program in the terminal using the 'node index' command
-'node index' is the only command needed to run this program
