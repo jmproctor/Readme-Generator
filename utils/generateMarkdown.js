@@ -38,7 +38,44 @@ renderLicense();
 function generateMarkdown(data) {
   return `
   # ${data.name}
+
+  ## Description
+    ${data.description}
   
+  # Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Tests](#tests)
+    * [Contributors](#Contributors)
+    * [Questions](#questions)
+  
+  
+  # Installation
+  To install this program, please install the following dependencies and follow these instructions:
+  ${data.installation}
+
+
+  # Usage
+  Instructions for use: ${data.usage}
+
+
+  # License
+  This project leverages the following license:
+  ${renderLicense(data.licenseSelection)}
+  Licence badges from [Shields.io](http://shields.io/)
+
+
+  # Tests
+  Testing: ${data.tests}
+
+
+  # Contributors
+  ${data.contributors}
+
+
+  # Questions
+  If you have any questions, feel free to contact ${data.username} via email at: ${data.email}.
 `;
 }
 
